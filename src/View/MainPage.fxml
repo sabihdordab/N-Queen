@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="737.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GeneticAlgorithm">
+   <children>
+      <VBox alignment="CENTER" prefHeight="651.0" prefWidth="517.0" spacing="45.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="600.0" text="The N Queen Is The Problem Of Placing N Chess Queens On An N×N Chessboard So That No Two Queens Attack Each Other." textAlignment="CENTER" textFill="#da0037" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/queen-chess-pic.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="177.0" text="Enter N In Range [4,]:" textFill="#da0037">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputFLD" prefHeight="24.0" prefWidth="262.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="160.0" right="160.0" />
+               </VBox.margin>
+            </TextField>
+            <Label fx:id="errorLBL" alignment="CENTER" prefHeight="17.0" prefWidth="208.0" textFill="#ffe500">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="DoneBTN" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Done" textFill="#da0037" />
+         </children>
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</VBox>
