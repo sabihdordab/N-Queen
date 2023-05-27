@@ -69,6 +69,12 @@ public class GeneticAlgorithm implements Initializable {
                 break;
             }
             mutation();
+            winCheck();
+            if (answer!=null){
+                System.out.println("-------- win ----------");
+                answer.printLayout(1);
+                break;
+            }
         }
     }
     public static void sortPopulation(){
