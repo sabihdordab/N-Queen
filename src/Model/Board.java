@@ -79,13 +79,13 @@ public class Board {
             
             Character[][] table = new Character[queens.size()][queens.size()];
             for (int i = 0 ; i < queens.size(); i++){
-                Arrays.fill(table[i], '0');
+                Arrays.fill(table[i], ' ');
             }
 
             for (Queen queen : queens) {
                 int x = queen.getX();
                 int y = queen.getY();
-                table[x][y] = '1';
+                table[x][y] = 'X';
             }
 
             for (int i = 0 ; i < queens.size() ; i++){
